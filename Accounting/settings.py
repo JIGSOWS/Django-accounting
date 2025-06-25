@@ -63,17 +63,17 @@ REST_FRAMEWORK = {
     }
 
 ALLOWED_HOSTS = [
-    'accounting-web-django.vercel.app',
+    'django-accounting-production.up.railway.app',
     'accounting-web-react-production.up.railway.app',
     'localhost',
     '127.0.0.1',
     ]
 
-CSRF_TRUSTED_ORIGINS = ['https://accounting-web-django.vercel.app',
+CSRF_TRUSTED_ORIGINS = ['https://django-accounting-production.up.railway.app',
                         'https://accounting-web-react-production.up.railway.app']
 
 CORS_ALLOWED_ORIGINS = [
-    'https://accounting-web-django.vercel.app',
+    'https://django-accounting-production.up.railway.app',
     'http://localhost:5173',
     'http://127.0.0.1:5173',
     'https://accounting-web-react-production.up.railway.app',
@@ -204,10 +204,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/'
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
